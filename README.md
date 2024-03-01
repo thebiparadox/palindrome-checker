@@ -1,2 +1,1 @@
-# palindrome-checker
-Created a palindrome checker for Bad Website's bootcamp
+Created a palindrome checker for Bad Website's bootcamp using [freeCodeCamp's curriculum](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-palindrome-checker-project/build-a-palindrome-checker).
