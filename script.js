@@ -1,8 +1,7 @@
 //returns true if str is palindrome
 //returns false if str is not palindrome
-const input = document.getElementById("#text-input");
+const userInput = document.getElementById("#text-input");
 function isPalindrome(input) {
-
     // Step 1: make str lower case
     const lowerCaseString = input.toLowerCase();
     // Step 2: Clean up str
@@ -18,17 +17,18 @@ function isPalindrome(input) {
     const isSame = reversedString === cleanedUpString;
     //return IsSame;
     }
-    
-const button = document.getElementById("#check-btn");
-button.addEventListener ("click", isPalindrome());
 
 const resultText = document.getElementById("#result");
+const showResults = `strong${userInput}strong is ${isPalindrome}`;
 
+    
+const button = document.getElementById("check-btn");
 
-function showResult() {
-if (isSame === true) {
-resultText.innerText += `This is a palindrome.`;
-} else {
-resultText.innerText += `This is not a palindrome.`;
-}
-}
+button.addEventListener("click", () => {
+    isPalindrome(userInput.value);
+    userInput.value = "";
+    })
+
+const pTag = document.createElement('p');
+pTag.className = 'user-input';
+pTag.innerHTML = showResults;
