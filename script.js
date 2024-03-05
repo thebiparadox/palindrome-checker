@@ -10,13 +10,13 @@ const formatInput = (str) => {
     return lowerCaseString.replace(regex, "");
 }
 
-const result = () => {
+function result() {
     const formattedInput = formatInput();
     const reversedInput = formattedInput.split("").reverse().join("");
     if (reversedInput === formattedInput) {
-        console.log("is palindrome")
+        console.log("is palindrome");
     } else {
-        console.log("is not palindrome")
+        console.log("is not palindrome");
     }
 }
 
