@@ -5,9 +5,9 @@ const resultMsg = document.getElementById("result-div");
 
 const formatInput = (str) => {
     const string = userInput.value.toString;
-    const lowerCaseString = string.toLowerCase();
+    const lowerCaseString = string.value.toLowerCase();
     const regex = /[\W_]/g;
-    return lowerCaseString.replace(regex, "");
+    return lowerCaseString.value.replace(regex, "");
 }
 
 function result() {
