@@ -19,5 +19,9 @@ function result() {
   }
 }
 
-button.addEventListener("click", result());
-
+button.addEventListener("click", result);
+userInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    result();
+  }
+});
