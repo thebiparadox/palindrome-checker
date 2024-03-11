@@ -2,6 +2,12 @@ const userInput = document.getElementById("text-input");
 const button = document.getElementById("check-btn");
 const resultMsg = document.getElementById("result-div");
 
+function checkUserInput {
+  if (!userInput) {
+    alert("Please provide word or phrase");
+    return;
+  }
+
 const formatInput = (str) => {
   const string = userInput.value.toString();
   const lowerCaseString = string.toLowerCase();
