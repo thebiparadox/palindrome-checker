@@ -1,7 +1,7 @@
 // get objects from DOM
 const userInput = document.getElementById("text-input");
 const button = document.getElementById("check-btn");
-const resultMsg = document.getElementById("result-div");
+const resultMsg = document.getElementById("result");
 
 // format input
 const formatInput = (str) => {
