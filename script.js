@@ -28,9 +28,9 @@ function result() {
   
 // checks if reversed input is the same as formatted input
   if (reversedInput === formattedInput) {
-    resultMsg.innerText += `${userInput.value} is a palindrome.`;
+    resultMsg.innerText = `${userInput.value} is a palindrome.`;
   } else {
-    resultMsg.innerText += `${userInput.value} is not a palindrome.`;
+    resultMsg.innerText = `${userInput.value} is not a palindrome.`;
   }
   }
 
