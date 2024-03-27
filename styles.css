@@ -3,6 +3,20 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
+  /* basic colors */
+  --background-light: #fefedf;
+  --background-dark: #4b4453;
+
+  /* gradient */
+  --gradient1: linear-gradient(
+    to right,
+    #845ec2,
+    #a178df,
+    #be93fd,
+    #dcb0ff,
+    #faccff
+  );
 }
 
 /* Prevent font size inflation */
@@ -20,8 +34,8 @@ html {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -32,14 +46,21 @@ body {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
 
@@ -51,14 +72,17 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture, svg {
+picture,
+svg {
   max-width: 100%;
   display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -72,4 +96,12 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* Div styling */
+/* styling */
+body {
+  background-color: var(--background-light);
+}
+
+button {
+  background: var(--gradient1);
+  font-size: 1rem;
+}
